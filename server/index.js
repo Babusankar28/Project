@@ -5,7 +5,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-const port = 8080;
+require("dotenv").config();
+const port = process.env.PORT;
 const { mongo_url } = require("./config/config");
 const userRouter = require("./routes/userRoutes");
 const productsRouter = require("./routes/productsRoutes");
