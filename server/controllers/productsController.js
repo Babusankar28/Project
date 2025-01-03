@@ -2,6 +2,7 @@ const ProductsModel = require("../models/ProductsModel");
 
 const getProducts = async (req, res) => {
   try {
+    
     const page = parseInt(req.query.page) || 1;
     const search = req.query.search || "";
     const limit = 8;

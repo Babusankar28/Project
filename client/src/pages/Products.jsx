@@ -4,7 +4,7 @@ import ProductsContent from "../components/Products/ProductsContent";
 
 function Products() {
   return (
-    <div className="p-4 py-10 md:flex gap-5">
+    <div className="p-4">
       <ProductsSideBar />
       <ProductsContent />
     </div>
